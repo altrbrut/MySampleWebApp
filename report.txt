@@ -1,0 +1,145 @@
+[INFO] Scanning for projects...
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for net.srirangan.packt.maven:MySampleWebApp:war:1.0-SNAPSHOT
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-failsafe-plugin is missing. @ line 91, column 9
+[WARNING] 'build.plugins.plugin.version' for org.codehaus.mojo:selenium-maven-plugin is missing. @ line 39, column 15
+[WARNING] 'build.plugins.plugin.version' for org.eclipse.jetty:jetty-maven-plugin is missing. @ line 61, column 12
+[WARNING] 
+[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.
+[WARNING] 
+[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.
+[WARNING] 
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building MySampleWebApp Maven Webapp 1.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ MySampleWebApp ---
+[WARNING] Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+[INFO] Copying 0 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ MySampleWebApp ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ MySampleWebApp ---
+[WARNING] Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+[INFO] skip non existing resourceDirectory C:\tmp\mavenapp\MySampleWebApp\src\test\resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ MySampleWebApp ---
+[INFO] Changes detected - recompiling the module!
+[WARNING] File encoding has not been set, using platform encoding Cp1252, i.e. build is platform dependent!
+[INFO] Compiling 1 source file to C:\tmp\mavenapp\MySampleWebApp\target\test-classes
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ MySampleWebApp ---
+[INFO] 
+[INFO] --- maven-war-plugin:2.2:war (default-war) @ MySampleWebApp ---
+[INFO] Packaging webapp
+[INFO] Assembling webapp [MySampleWebApp] in [C:\tmp\mavenapp\MySampleWebApp\target\MySampleWebApp]
+[INFO] Processing war project
+[INFO] Copying webapp resources [C:\tmp\mavenapp\MySampleWebApp\src\main\webapp]
+[INFO] Webapp assembled in [94 msecs]
+[INFO] Building war: C:\tmp\mavenapp\MySampleWebApp\target\MySampleWebApp.war
+[INFO] WEB-INF\web.xml already added, skipping
+[INFO] 
+[INFO] --- selenium-maven-plugin:2.3:start-server (default) @ MySampleWebApp ---
+Launching Selenium Server
+Waiting for Selenium Server...
+[INFO] User extensions: C:\tmp\mavenapp\MySampleWebApp\target\selenium\user-extensions.js
+09:03:29,436 INFO  [org.openqa.selenium.server.SeleniumServer] Java: Oracle Corporation 25.31-b07
+09:03:29,436 INFO  [org.openqa.selenium.server.SeleniumServer] OS: Windows Server 2008 R2 6.1 amd64
+09:03:29,467 INFO  [org.openqa.selenium.server.SeleniumServer] v2.21.0, with Core v2.21.0. Built from revision 16551
+09:03:29,701 INFO  [org.openqa.selenium.server.SeleniumServer] RemoteWebDriver instances should connect to: http://127.0.0.1:4444/wd/hub
+09:03:29,701 INFO  [org.openqa.jetty.http.HttpServer] Version Jetty/5.1.x
+09:03:29,701 INFO  [org.openqa.jetty.util.Container] Started HttpContext[/selenium-server,/selenium-server]
+09:03:29,779 INFO  [org.openqa.jetty.util.Container] Started org.openqa.jetty.jetty.servlet.ServletHandler@97e1986
+09:03:29,779 INFO  [org.openqa.jetty.util.Container] Started HttpContext[/wd,/wd]
+09:03:29,779 INFO  [org.openqa.jetty.util.Container] Started HttpContext[/selenium-server/driver,/selenium-server/driver]
+09:03:29,779 INFO  [org.openqa.jetty.util.Container] Started HttpContext[/,/]
+09:03:29,779 INFO  [org.openqa.jetty.http.SocketListener] Started SocketListener on 0.0.0.0:4444
+09:03:29,779 INFO  [org.openqa.jetty.util.Container] Started org.openqa.jetty.jetty.Server@3830f1c0
+09:03:30.216 INFO - Checking Resource aliases
+Selenium Server started
+[INFO] 
+[INFO] >>> jetty-maven-plugin:9.3.0.M1:start (start-jetty) > validate @ MySampleWebApp >>>
+[INFO] 
+[INFO] <<< jetty-maven-plugin:9.3.0.M1:start (start-jetty) < validate @ MySampleWebApp <<<
+[INFO] 
+[INFO] --- jetty-maven-plugin:9.3.0.M1:start (start-jetty) @ MySampleWebApp ---
+[INFO] Configuring Jetty for project: MySampleWebApp Maven Webapp
+[INFO] webAppSourceDirectory not set. Trying src\main\webapp
+[INFO] Reload Mechanic: automatic
+[INFO] Classes = C:\tmp\mavenapp\MySampleWebApp\target\classes
+[INFO] Context path = /
+[INFO] Tmp directory = C:\tmp\mavenapp\MySampleWebApp\target\tmp
+[INFO] Web defaults = org/eclipse/jetty/webapp/webdefault.xml
+[INFO] Web overrides =  none
+[INFO] web.xml file = file:///C:/tmp/mavenapp/MySampleWebApp/src/main/webapp/WEB-INF/web.xml
+[INFO] Webapp directory = C:\tmp\mavenapp\MySampleWebApp\src\main\webapp
+[INFO] Started Jetty Server
+[INFO] 
+[INFO] --- maven-failsafe-plugin:2.18.1:integration-test (default) @ MySampleWebApp ---
+[INFO] Failsafe report directory: C:\tmp\mavenapp\MySampleWebApp\target\failsafe-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running ITSeleniumHelloWorldExample
+09:03:35,660 INFO  [org.openqa.jetty.util.Credential] Checking Resource aliases
+09:03:35.660 INFO - Command request: getNewBrowserSession[*firefox, http://localhost:8080/, ] on session null
+09:03:35.676 INFO - creating new remote session
+09:03:35.723 INFO - Allocated session 00fc4478dce742e9be9aac0c4e74f394 for http://localhost:8080/, launching...
+09:03:35.769 INFO - Preparing Firefox profile...
+09:03:56.971 ERROR - Failed to start new browser session, shutdown browser and clear all session data
+java.lang.RuntimeException: Firefox refused shutdown while preparing a profile
+	at org.openqa.selenium.server.browserlaunchers.FirefoxChromeLauncher.waitForFullProfileToBeCreated(FirefoxChromeLauncher.java:367)
+	at org.openqa.selenium.server.browserlaunchers.FirefoxChromeLauncher.populateCustomProfileDirectory(FirefoxChromeLauncher.java:120)
+	at org.openqa.selenium.server.browserlaunchers.FirefoxChromeLauncher.launch(FirefoxChromeLauncher.java:90)
+	at org.openqa.selenium.server.browserlaunchers.FirefoxChromeLauncher.launchRemoteSession(FirefoxChromeLauncher.java:412)
+	at org.openqa.selenium.server.browserlaunchers.FirefoxLauncher.launchRemoteSession(FirefoxLauncher.java:114)
+	at org.openqa.selenium.server.BrowserSessionFactory.createNewRemoteSession(BrowserSessionFactory.java:381)
+	at org.openqa.selenium.server.BrowserSessionFactory.getNewBrowserSession(BrowserSessionFactory.java:125)
+	at org.openqa.selenium.server.BrowserSessionFactory.getNewBrowserSession(BrowserSessionFactory.java:86)
+	at org.openqa.selenium.server.SeleniumDriverResourceHandler.getNewBrowserSession(SeleniumDriverResourceHandler.java:810)
+	at org.openqa.selenium.server.SeleniumDriverResourceHandler.doCommand(SeleniumDriverResourceHandler.java:437)
+	at org.openqa.selenium.server.SeleniumDriverResourceHandler.handleCommandRequest(SeleniumDriverResourceHandler.java:407)
+	at org.openqa.selenium.server.SeleniumDriverResourceHandler.handle(SeleniumDriverResourceHandler.java:151)
+	at org.openqa.jetty.http.HttpContext.handle(HttpContext.java:1530)
+	at org.openqa.jetty.http.HttpContext.handle(HttpContext.java:1482)
+	at org.openqa.jetty.http.HttpServer.service(HttpServer.java:909)
+	at org.openqa.jetty.http.HttpConnection.service(HttpConnection.java:820)
+	at org.openqa.jetty.http.HttpConnection.handleNext(HttpConnection.java:986)
+	at org.openqa.jetty.http.HttpConnection.handle(HttpConnection.java:837)
+	at org.openqa.jetty.http.SocketListener.handleConnection(SocketListener.java:243)
+	at org.openqa.jetty.util.ThreadedServer.handle(ThreadedServer.java:357)
+	at org.openqa.jetty.util.ThreadPool$PoolThread.run(ThreadPool.java:534)
+Caused by: org.openqa.selenium.server.browserlaunchers.FirefoxChromeLauncher$FileLockRemainedException: Lock file still present! C:\Users\ADMINI~1\AppData\Local\Temp\customProfileDir00fc4478dce742e9be9aac0c4e74f394\parent.lock
+	at org.openqa.selenium.server.browserlaunchers.FirefoxChromeLauncher.waitForFileLockToGoAway(FirefoxChromeLauncher.java:318)
+	at org.openqa.selenium.server.browserlaunchers.FirefoxChromeLauncher.waitForFullProfileToBeCreated(FirefoxChromeLauncher.java:365)
+	... 20 more
+09:03:57.033 INFO - Got result: Failed to start new browser session: Error while launching browser on session null
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 21.483 sec <<< FAILURE! - in ITSeleniumHelloWorldExample
+testHelloWorld(ITSeleniumHelloWorldExample)  Time elapsed: 21.483 sec  <<< ERROR!
+java.lang.RuntimeException: Could not start Selenium session: Failed to start new browser session: Error while launching browser
+	at com.thoughtworks.selenium.HttpCommandProcessor.throwAssertionFailureExceptionOrError(HttpCommandProcessor.java:109)
+	at com.thoughtworks.selenium.HttpCommandProcessor.doCommand(HttpCommandProcessor.java:103)
+	at com.thoughtworks.selenium.HttpCommandProcessor.getString(HttpCommandProcessor.java:272)
+	at com.thoughtworks.selenium.HttpCommandProcessor.start(HttpCommandProcessor.java:234)
+	at com.thoughtworks.selenium.DefaultSelenium.start(DefaultSelenium.java:100)
+	at ITSeleniumHelloWorldExample.setUp(ITSeleniumHelloWorldExample.java:17)
+
+
+Results :
+
+Tests in error: 
+  ITSeleniumHelloWorldExample.setUp:17 » Runtime Could not start Selenium sessio...
+
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0
+
+[WARNING] File encoding has not been set, using platform encoding Cp1252, i.e. build is platform dependent! The file encoding for reports output files should be provided by the POM property ${project.reporting.outputEncoding}.
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 56.489 s
+[INFO] Finished at: 2015-02-17T09:03:57+07:00
+[INFO] Final Memory: 68M/577M
+[INFO] ------------------------------------------------------------------------
